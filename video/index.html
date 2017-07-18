@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+	<title>Pierre Brossolette</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/overlay.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+
+    <script src="js/popcorn.min.js"></script>
+    <script src="js/playpause.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function openNav2() {
+            document.getElementById("myNav2").style.width = "100%";
+        }
+
+        function openNav3() {
+            document.getElementById("myNav3").style.width = "100%";
+        }
+
+        function openNav4() {
+            document.getElementById("myNav4").style.width = "100%";
+        }
+
+        function openNav5() {
+            document.getElementById("myNav5").style.width = "100%";
+        }
+
+        function openNav6() {
+            document.getElementById("myNav6").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        function closeNav2() {
+            document.getElementById("myNav2").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        function closeNav3() {
+            document.getElementById("myNav3").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        function closeNav4() {
+            document.getElementById("myNav4").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        function closeNav5() {
+            document.getElementById("myNav5").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        function closeNav6() {
+            document.getElementById("myNav6").style.width = "0%";
+            document.getElementById('pierrebrossolettevideo').play();
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var pop = Popcorn("#pierrebrossolettevideo");
+            pop.footnote({
+                start: 6,
+                end: 16,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Ceci est un ruban</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Cliquez ici pour ouvrir le ruban. Les rubans apparaissant au long de la vidéo proposent des images d'archives.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+
+            var pop = Popcorn("#pierrebrossolettevideo");
+            pop.footnote({
+                start: 31,
+                end: 41,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav2(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Photos de Pierre Brossolette</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher d'autres photos de Pierre Brossolette et de sa famille.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+            var pop = Popcorn("#pierrebrossolettevideo");
+            pop.footnote({
+                start: 52,
+                end: 62,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav3(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Journaux dans lesquels il travaillait</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher les couvertures et noms des journaux dans lesquels Pierre Brossolette travaillait.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+            var pop = Popcorn("#pierrebrossolettevideo");
+            pop.footnote({
+                start: 109,
+                end: 119,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav4(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Distinctions reçues</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher les distictions reçues par Pierre Brossolette au cours de sa vie.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+            var pop = Popcorn("#pierrebrossolettevideo");
+            pop.footnote({
+                start: 134,
+                end: 144,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav5(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Autres actions de Pierre Brossolette</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher deux autres actions importantes de Pierre Brossolette pour la Résistance.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+            pop.footnote({
+                start: 168,
+                end: 178,
+                text: "<a href=\"javascript:void(0)\" onclick=\"openNav6(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>84 Avenue Foch, Paris</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Découvrir l'endroit où Pierre Brossolette a été enfermé.</span></div></div></div></a>",
+                target: "pierrebrossoletteannotation"
+            });
+
+            pop.play();
+        }, false);
+    </script>
+</head>
+
+  <body>
+	<noscript>
+		<div class="nojs"><div class="nojsmsg">Veuillez activer JavaScript.</div></div>
+	</noscript>
+
+	<video height="1080" width="720" id="pierrebrossolettevideo" nocontrols>
+      <source src="vid/video-v2.mp4">
+	  <div class="nojs"><div class="nojsmsg">Naviguateur non supporté.</div></div>
+    </video>
+
+    <div id="pierrebrossoletteannotation"></div>
+
+	<div class="controls"><div style="text-align: center;"><button id="restartbtn" onclick="restart();"><img src="img/icons/restart.png" alt="Restart"/></button> 
+    <button id="playbtn" onclick="vidplay();"><img src="img/icons/pause.png" alt="Pause"/></button></div></div>
+
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>Vous avez ouvert un ruban.</h1>
+            <br>
+            <p>Les rubans apparaissant au long de la vidéo proposent des images d'archives.</p>
+			<br>
+			<p>La vidéo sera mise en pause automatiquement.</p>
+			<br>
+			<br>
+        </div>
+
+    </div>
+
+    <div id="myNav2" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>Photos de Pierre Brossolette</h1>
+            <br>
+            <img src="img/photos/1.jpg" />
+			<p>Pierre Brossolette.</p>
+            <br>
+			<img src="img/photos/2.jpg" />
+			<p>La carte d'identité de Pierre Brossolette.</p>
+            <br>
+			<img src="img/photos/3.jpg" />
+			<p>Pierre Brossolette tenant un discours pour la lutte de la libération de la France.</p>
+            <br>
+            <img src="img/photos/4.jpg" />
+			<p>Pierre Brossolette dans l'<i>Ecole Normale Supérieure</i>, 4e au premier rang.</p>
+            <br>
+            <img src="img/photos/5.jpg" />
+			<p>Pierre Brossolette dans le <i>5e Régiment d'Infanterie Navarre</i> (à l'avant au milieu).</p>
+            <br>
+            <img src="img/photos/6.jpg" />
+			<p>Gilberte Bruel et ses deux enfants.</p>
+            <br>
+            <img src="img/photos/7.jpg" />
+			<p>Pierre Brossolette et ses parents, en haut et ses deux soeurs, à gauche.</p>
+			<br>
+			<br>
+        </div>
+
+    </div>
+
+    <div id="myNav3" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>Journaux</h1>
+            <br>
+            <p>Pierre Brossolette a écrit pour de nombreux journaux tels que...<p>
+            <br>
+            <img src="img/journaux/1.jpg" />
+            <p>l'<i>Europe Nouvelle</i></p>
+            <br>
+            <img src="img/journaux/2.jpg" />
+            <p>le <i>Quotidien</i></p>
+            <br>
+            <img src="img/journaux/3.jpg" />
+            <p>le <i>Progrès Civique</i></p>
+            <br>
+            <img src="img/journaux/5.jpg" />
+            <p><i>Notre Temps</i></p>
+            <br>
+            <img src="img/journaux/6.jpg" />
+		    <p><i>Excelsior</i></p>
+            <br>
+            <img src="img/journaux/8.jpg" />
+		    <p><i>Terre Libre</i></p>
+			<br>
+			<br>
+        </div>
+
+    </div>
+	
+    <div id="myNav4" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>Distinctions reçues</h1>
+			<br>
+            <img class="distictions" src="img/distinctions/1.jpg" />
+			<p>Croix de Guerre</p>
+            <br>
+            <img class="distictions" src="img/distinctions/2.jpg" />
+			<p>Compagnon de la Libération</p>
+            <br>
+            <img class="distictions" src="img/distinctions/3.jpg" />
+			<p>Médaille de la Résistance</p>
+            <br>
+            <img class="distictions" src="img/distinctions/4.jpg" />
+			<p>Légion d'Honneur</p>
+			<br>
+			<br>
+        </div>
+
+    </div>
+	
+    <div id="myNav5" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>Autres actions importantes</h1>
+            <br>
+			<img src="img/actions/1.jpg"/>
+			<p>Au début des années 40, Brossolette et sa femme rachètent une librarie au 89 Rue de la Pompe à Paris, qui servit de lieu de rencontre et de boîte aux lettres pour les résistants, grâce à une bibliothèque tournante au sous-sol.</p>
+            <br>
+			<img src="img/actions/2.jpg"/>
+			<p>Dans un discours à la BBC le 22 septembre 1942, Brossolette rend un hommage poignant aux «soutiers de la gloire». Il prendra la parole au micro de la BBC 38 fois, en remplacement de Maurice Schumann, et écrira de nombreux articles.</p>
+			<br>
+			<br>
+		</div>
+
+    </div>
+	
+    <div id="myNav6" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+
+        <div class="overlay-content">
+            <h1>84 Avenue Foch, Paris</h1>
+            <br>
+			<img src="img/avenuefoch/1.jpg" />
+			<br>
+			<br>
+        </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	background-color: black;
+	color: white;
+}
+        
+video#pierrebrossolettevideo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 10;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.nojs {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	position: absolute;
+	display: table;
+}
+
+.nojsmsg {
+	color: black;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	font-size: 200%
+}
+
+button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.controls {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	z-index: 20;
+}
+
+.distictions {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}

@@ -1,0 +1,108 @@
+a {
+	color: white;
+}
+
+#reminderContainer {
+	z-index: 30;
+	width: 0px;
+	height: 0px;
+	background: #131414;
+	position: absolute;
+	left: 0px;
+	bottom: 8%;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 20px #131414;
+	-webkit-animation: animateReminder 10s 0s 1;
+}
+
+#reminderHeader {
+	float: right;
+	width: 400px;
+	height: 26px;
+	background: #3f4144;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	font-size: 20px;
+}
+
+#reminderContent {
+	width: 400px;
+	height: 94px;
+	background: #5c5d60;
+	position: relative;
+	overflow: hidden;
+}
+
+#icon {
+	width: 50px;
+	height: 50px;
+	padding: 7px;
+	float: left;
+	transform: translate(0,-2px);
+}
+
+@-webkit-keyframes animateReminder {
+	0%, 100% {
+		width: 0px;
+		height: 24px;
+	}
+	20%, 80% {
+		width: 400px;
+		height: 24px;
+	}
+	30%, 70% {
+		width: 400px;
+		height: 85px;
+	}
+}
+
+.overlay {  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
