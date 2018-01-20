@@ -7,21 +7,6 @@ html, body {
 	background-color: black;
 	color: white;
 }
-        
-video#pierrebrossolettevideo {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: 10;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
 
 .nojs {
 	background-color: white;
@@ -40,21 +25,12 @@ video#pierrebrossolettevideo {
 	font-size: 200%
 }
 
-button {
-	background-color: transparent;
-	outline: none;
-	border: none;
-}
-
-.controls {
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
-	z-index: 20;
-}
-
 .distictions {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+}
+
+.plyr {
+	height: 100%;
 }

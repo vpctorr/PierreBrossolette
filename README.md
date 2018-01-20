@@ -5,11 +5,9 @@ L'histoire de Pierre Brossolette, pour l'EPI "Ombre et Lumière" présenté à l
 
 ___
 
-### License:
-[GNU AGPLv3](https://github.com/TheAslera/PierreBrossolette/blob/master/LICENSE)
+### Copyright & license:
+Copyright © 2018 Victor Poulard
+Publié sous la license [GNU AGPLv3](https://github.com/TheAslera/PierreBrossolette/blob/master/LICENSE)
 
 ### Frameworks utilisés:
-[popcorn.js](https://github.com/mozilla/popcorn-js) (vidéo), [reveal.js](https://github.com/hakimel/reveal.js) (diaporama)
-
-### Langages utilisés:
-HTML, CSS, JS
+[Plyr](https://github.com/sampotts/plyr) (lecteur vidéo), [Popcorn.js](https://github.com/menismu/popcorn-js) (interactivité), [reveal.js](https://github.com/hakimel/reveal.js) (diaporama)

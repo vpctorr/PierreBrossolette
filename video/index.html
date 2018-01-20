@@ -8,110 +8,69 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/overlay.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/plyr.css">
 
+	<script src="js/plyr.js"></script>
     <script src="js/popcorn.min.js"></script>
-    <script src="js/playpause.js"></script>
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
+        function openOverlayId(id) {
+			var elementId = "overlayId" + id.toString();
+            document.getElementById(elementId).style.width = "100%";
+            players[0].pause();
         }
 
-        function openNav2() {
-            document.getElementById("myNav2").style.width = "100%";
-        }
-
-        function openNav3() {
-            document.getElementById("myNav3").style.width = "100%";
-        }
-
-        function openNav4() {
-            document.getElementById("myNav4").style.width = "100%";
-        }
-
-        function openNav5() {
-            document.getElementById("myNav5").style.width = "100%";
-        }
-
-        function openNav6() {
-            document.getElementById("myNav6").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
-        }
-
-        function closeNav2() {
-            document.getElementById("myNav2").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
-        }
-
-        function closeNav3() {
-            document.getElementById("myNav3").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
-        }
-
-        function closeNav4() {
-            document.getElementById("myNav4").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
-        }
-
-        function closeNav5() {
-            document.getElementById("myNav5").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
-        }
-
-        function closeNav6() {
-            document.getElementById("myNav6").style.width = "0%";
-            document.getElementById('pierrebrossolettevideo').play();
+        function closeOverlayId(id) {
+			var elementId = "overlayId" + id.toString();
+            document.getElementById(elementId).style.width = "0%";
+            players[0].play();
         }
 
         document.addEventListener("DOMContentLoaded", function() {
 
-            var pop = Popcorn("#pierrebrossolettevideo");
+            var pop = Popcorn('.js-player');
+
             pop.footnote({
                 start: 6,
                 end: 16,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Ceci est un ruban</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Cliquez ici pour ouvrir le ruban. Les rubans apparaissant au long de la vidéo proposent des images d'archives.</span></div></div></div></a>",
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(1)"><div id="reminderContainer"><div id="reminderHeader"><span>Ceci est un ruban</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Cliquez ici pour ouvrir le ruban. Les rubans apparaissant au long de la vidéo proposent des images d\'archives.</span></div></div></div></a>',
                 target: "pierrebrossoletteannotation"
             });
 
-            var pop = Popcorn("#pierrebrossolettevideo");
             pop.footnote({
                 start: 31,
                 end: 41,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav2(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Photos de Pierre Brossolette</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher d'autres photos de Pierre Brossolette et de sa famille.</span></div></div></div></a>",
-                target: "pierrebrossoletteannotation"
-            });
-            var pop = Popcorn("#pierrebrossolettevideo");
-            pop.footnote({
-                start: 52,
-                end: 62,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav3(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Journaux dans lesquels il travaillait</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher les couvertures et noms des journaux dans lesquels Pierre Brossolette travaillait.</span></div></div></div></a>",
-                target: "pierrebrossoletteannotation"
-            });
-            var pop = Popcorn("#pierrebrossolettevideo");
-            pop.footnote({
-                start: 109,
-                end: 119,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav4(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Distinctions reçues</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher les distictions reçues par Pierre Brossolette au cours de sa vie.</span></div></div></div></a>",
-                target: "pierrebrossoletteannotation"
-            });
-            var pop = Popcorn("#pierrebrossolettevideo");
-            pop.footnote({
-                start: 134,
-                end: 144,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav5(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>Autres actions de Pierre Brossolette</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Afficher deux autres actions importantes de Pierre Brossolette pour la Résistance.</span></div></div></div></a>",
-                target: "pierrebrossoletteannotation"
-            });
-            pop.footnote({
-                start: 168,
-                end: 178,
-                text: "<a href=\"javascript:void(0)\" onclick=\"openNav6(); document.getElementById(\'pierrebrossolettevideo\').pause();\"><div id=\"reminderContainer\"><div id=\"reminderHeader\"><span>84 Avenue Foch, Paris</span></div><div id=\"reminderContent\"><image id=\"icon\" src=\"img/icons/plus.png\"><div id=\"reminderContentText\">Découvrir l'endroit où Pierre Brossolette a été enfermé.</span></div></div></div></a>",
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(2)"><div id="reminderContainer"><div id="reminderHeader"><span>Photos de Pierre Brossolette</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Afficher d\'autres photos de Pierre Brossolette et de sa famille.</span></div></div></div></a>',
                 target: "pierrebrossoletteannotation"
             });
 
-            pop.play();
+            pop.footnote({
+                start: 52,
+                end: 62,
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(3)"><div id="reminderContainer"><div id="reminderHeader"><span>Journaux dans lesquels il travaillait</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Afficher les couvertures et noms des journaux dans lesquels Pierre Brossolette travaillait.</span></div></div></div></a>',
+                target: "pierrebrossoletteannotation"
+            });
+
+            pop.footnote({
+                start: 109,
+                end: 119,
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(4)"><div id="reminderContainer"><div id="reminderHeader"><span>Distinctions reçues</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Afficher les distictions reçues par Pierre Brossolette au cours de sa vie.</span></div></div></div></a>',
+                target: "pierrebrossoletteannotation"
+            });
+
+            pop.footnote({
+                start: 134,
+                end: 144,
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(5)"><div id="reminderContainer"><div id="reminderHeader"><span>Autres actions de Pierre Brossolette</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Afficher deux autres actions importantes de Pierre Brossolette pour la Résistance.</span></div></div></div></a>',
+                target: "pierrebrossoletteannotation"
+            });
+
+            pop.footnote({
+                start: 168,
+                end: 178,
+                text: '<a href="javascript:void(0)" onclick="openOverlayId(6)"><div id="reminderContainer"><div id="reminderHeader"><span>84 Avenue Foch, Paris</span></div><div id="reminderContent"><image id="icon" src="img/plus.png"><div id="reminderContentText">Découvrir l\'endroit où Pierre Brossolette a été enfermé.</span></div></div></div></a>',
+                target: "pierrebrossoletteannotation"
+            });
+
         }, false);
     </script>
 </head>
@@ -120,20 +79,19 @@
 	<noscript>
 		<div class="nojs"><div class="nojsmsg">Veuillez activer JavaScript.</div></div>
 	</noscript>
-
-	<video height="1080" width="720" id="pierrebrossolettevideo" nocontrols>
-      <source src="vid/video-v2.mp4">
-	  <div class="nojs"><div class="nojsmsg">Naviguateur non supporté.</div></div>
+    
+	<video class="js-player" poster="/path/to/poster.jpg" controls>
+		<source src="vid/video-v2-fullhd.mp4" type="video/mp4">
+		<source src="vid/video-v2-fullhd.webm" type="video/webm">
     </video>
+	
+	<script>var players = plyr.setup('.js-player');</script>
 
     <div id="pierrebrossoletteannotation"></div>
 
-	<div class="controls"><div style="text-align: center;"><button id="restartbtn" onclick="restart();"><img src="img/icons/restart.png" alt="Restart"/></button> 
-    <button id="playbtn" onclick="vidplay();"><img src="img/icons/pause.png" alt="Pause"/></button></div></div>
+    <div id="overlayId1" class="overlay">
 
-    <div id="myNav" class="overlay">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(1)">&times;</a>
 
         <div class="overlay-content">
             <h1>Vous avez ouvert un ruban.</h1>
@@ -147,9 +105,9 @@
 
     </div>
 
-    <div id="myNav2" class="overlay">
+    <div id="overlayId2" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(2)">&times;</a>
 
         <div class="overlay-content">
             <h1>Photos de Pierre Brossolette</h1>
@@ -180,9 +138,9 @@
 
     </div>
 
-    <div id="myNav3" class="overlay">
+    <div id="overlayId3" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(3)">&times;</a>
 
         <div class="overlay-content">
             <h1>Journaux</h1>
@@ -212,9 +170,9 @@
 
     </div>
 	
-    <div id="myNav4" class="overlay">
+    <div id="overlayId4" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(4)">&times;</a>
 
         <div class="overlay-content">
             <h1>Distinctions reçues</h1>
@@ -236,9 +194,9 @@
 
     </div>
 	
-    <div id="myNav5" class="overlay">
+    <div id="overlayId5" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(5)">&times;</a>
 
         <div class="overlay-content">
             <h1>Autres actions importantes</h1>
@@ -254,9 +212,9 @@
 
     </div>
 	
-    <div id="myNav6" class="overlay">
+    <div id="overlayId6" class="overlay">
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayId(6)">&times;</a>
 
         <div class="overlay-content">
             <h1>84 Avenue Foch, Paris</h1>
@@ -267,5 +225,7 @@
         </div>
 
     </div>
+	
   </body>
+
 </html>
