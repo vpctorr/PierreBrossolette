@@ -1,12 +1,13 @@
 # PierreBrossolette
 L'histoire de Pierre Brossolette, pour l'EPI "Ombre et Lumière" présenté à l'oral du Brevet par Victor Poulard.
 
-**Disponible à l'adresse:** https://theaslera.me/pierrebrossolette
+**Disponible à l'adresse:** https://brossolette.theaslera.me
 
 ___
 
 ### Copyright & license:
 Copyright © 2018 Victor Poulard
+
 Publié sous la license [GNU AGPLv3](https://github.com/TheAslera/PierreBrossolette/blob/master/LICENSE)
 
 ### Frameworks utilisés:
